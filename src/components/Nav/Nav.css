@@ -1,12 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
 .nav {
   /* flex box layout */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 0 30px;
-  background-color: #00acb0;
-  overflow: hidden;
+  overflow: hidden;  margin: 0;
+  font-weight: 100;
+  /* background: radial-gradient(#a23982,#1f1013); */
 }
 
 .nav a {
@@ -19,12 +24,16 @@
   color: #f2f2f2;
   padding-left: 10px;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .navLink {
+  font-family: 'Lato', sans-serif;
   display: inline-block;
-  color: #f2f2f2;
-  background-color: #00acb0;
+  /* color: #f2f2f2; */
+  margin: 0;
+  font-weight: 100;
+  /* background: radial-gradient(#a23982,#1f1013); */
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
@@ -38,5 +47,6 @@
 }
 
 .navLink:hover {
-  background-color: #008183;
+  background-color: #eee9e5;
 }
+

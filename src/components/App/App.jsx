@@ -14,11 +14,12 @@ import Footer from '../Footer/Footer';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
 import AboutPage from '../AboutPage/AboutPage';
-import UserPage from '../UserPage/UserPage';
+import HabitList from '../HabitList/HabitList';
 import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import AddHabit from '../AddHabit/AddHabit';
 
 import './App.css';
 
@@ -55,9 +56,9 @@ function App() {
           <ProtectedRoute
             // logged in shows UserPage else shows LoginPage
             exact
-            path="/user"
+            path="/habits"
           >
-            <UserPage />
+            <HabitList />
           </ProtectedRoute>
 
           <ProtectedRoute
@@ -68,6 +69,14 @@ function App() {
             <InfoPage />
           </ProtectedRoute>
 
+          <ProtectedRoute
+            // add a habit
+            exact
+            path="/add"
+          >
+            <AddHabit />
+          </ProtectedRoute>
+
           <Route
             exact
             path="/login"
@@ -75,7 +84,7 @@ function App() {
             {user.id ?
               // If the user is already logged in, 
               // redirect to the /user page
-              <Redirect to="/user" />
+              <Redirect to="/habits" />
               :
               // Otherwise, show the login page
               <LoginPage />
@@ -89,7 +98,7 @@ function App() {
             {user.id ?
               // If the user is already logged in, 
               // redirect them to the /user page
-              <Redirect to="/user" />
+              <Redirect to="/habits" />
               :
               // Otherwise, show the registration page
               <RegisterPage />

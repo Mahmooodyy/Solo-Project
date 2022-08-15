@@ -1,0 +1,49 @@
+.description{
+    margin-top: 25px;
+}
+.sbtn {
+    
+    background-image: linear-gradient(45deg,#2f7bff 0%, #19f0cc  51%, #89ff2f   100%)
+    
+   }
+   
+   .sbtn {
+    margin-left: 238px;
+    margin-top: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    /* box-shadow: 0px 0px 14px -7px #f09819; */
+   }
+   
+   .sbtn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+   }
+   
+   .sbtn:active {
+    transform: scale(0.95);
+   }
+
+   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.txt{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
